@@ -10,7 +10,6 @@ let currInp = document.querySelector('datalist')
 
 
 form.onsubmit = (event) => {
-    event.preventDefault()
 
     let wallet = {
         "id": Math.random(),
@@ -28,6 +27,7 @@ form.onsubmit = (event) => {
 
     postTo("cards", wallet)
     // if(wallet.name.length !== 0 && wallet.currency.length)
+    window.location.assing('../index.html')
 
 }
 
